@@ -1,0 +1,242 @@
+.services {
+    margin-bottom: 150px;
+}
+
+/* --------- header --------- */
+.services__header {
+
+    position: relative;
+
+}
+
+.services__header-pic {
+    margin: 100px auto 85px auto;
+    width: 490px;
+}
+
+
+
+.services__header-text {
+
+    position: absolute;
+    top: 0;
+    left: -9999px;
+
+    font-size: 74px;
+    font-family: "OpenSans-Extrabold";
+    text-align: center;
+
+    background-image: -webkit-linear-gradient(-78deg, #4b2222, #912929);
+    //background: url('../img/bg/slider.jpg') center center no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/* --------- header --------- */
+
+
+/* --------- navigation --------- */
+.services__nav {
+
+	.nav__list-services {
+
+        font-size: 22px;
+
+	}
+
+	.nav__item {
+
+        float: left;
+        height: 85px;
+        padding-right: 78px;
+        position: relative;
+        cursor: pointer;
+
+        &.active {
+
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: url('../img/decoration/nav__list-services-active-item.png') no-repeat;
+            }            
+
+        }
+
+    }
+
+    .nav__link {
+
+
+    }
+
+}
+/* --------- /navigation --------- */
+
+
+/* --------- content --------- */
+.services__content {
+
+    position: relative;
+
+    /*  header  */
+    .services__content-header {
+
+        padding-left: 125px;
+
+        .header__text {
+            margin-bottom: 0;
+            font-size: 36px;
+            line-height: 36px;
+            background-image: -webkit-linear-gradient(-78deg, #4b2222, #912929);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-family: "OpenSans-Semibold";
+        }
+        
+        .header__description {
+            margin-top: 30px;
+            color: #b2b2b2;
+            font-family: "OpenSans-Light";
+            font-size: 24px;
+
+        }
+
+    }
+
+    /*  /header  */
+
+
+    /*  aside  */
+    .services__content-aside {
+
+        .clearfix;
+
+        position: absolute;
+        right: 85px;
+        top: 100px;
+
+        .services__content-button {
+            .border-radius(15px);
+            background: url('../img/icons/zamerschik__button.png');
+            .vertical-gradient(#411515, #842d2d 67%, #9c4371 150%, 174deg);
+            border: 0;
+            outline: none;
+            font-family: 'OpenSans-Semibold';
+            font-size: 18px;
+            line-height: 25px;
+            text-transform: uppercase;
+            color: #ffffff;
+            width: 295px;
+            height: 56px;
+        }
+    }
+
+    /*  /aside  */
+
+    .services__divider {
+        .inline-divider(#682323, 550px, 180px, 1px);
+    }
+    /*  description  */
+
+    .services__content-description {
+
+        margin: 95px 0 0 220px;
+
+        font-size: 18px;
+        font-family: 'OpenSans-Regular';
+        .column(2, 110px);
+        p {
+
+            &:first-child {
+                padding-bottom: 20px;
+                line-height: 36px;
+
+            }
+
+            &:last-child {
+                padding-bottom: 75px;
+
+            }
+
+        }
+    }
+
+    /*  /description  */
+
+    /*  specification  */
+    .services__content-specs {
+
+        float: right;
+        clear: both;
+        height: 240px;
+
+            .clearfix;
+
+        margin-top: 110px;
+
+        .specs__list {
+
+        }
+        
+        .specs__item {
+            width: 120px;
+            float: left;
+            height: 85px;
+            padding-right: 78px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .item__pic {
+            width: 120px;
+            height: 115px;
+            border: 2px solid #dac8c8;
+
+        }
+
+        .item__text {
+            text-align: center;
+            margin-top: 30px;
+
+            font-style: 18px;
+            font-family: 'OpenSans-Light';
+            font-style: italic;
+
+        }
+
+    }
+
+    /*  /specification  */
+
+    .services__divider-bottom {
+        margin-left: 395px;
+    }
+
+    /*  logos  */
+    .services__content-logos {
+
+        margin: 50px 0 100px 70px;
+
+        .logos__list {
+
+            .clearfix;
+
+        }
+
+        .logos__item{
+            float: left;
+            height: 100px;
+            margin-right: 40px;
+            position: relative;
+            cursor: pointer;
+        }
+
+    }
+
+    /*  /logos  */
+
+}
+
+

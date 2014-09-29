@@ -15,18 +15,17 @@
 			var state = this._state,
 				holder = this._holder,
 				events = this._events,
-				keys = Object.keys(events),
-				count = keys.length,
-				val, i,
-				ev;
+				key, ev;
 
-			for (i = 0; i < count; i++)
-			{
-				ev = (function() { return events[keys[i]]; })();
-				holder.on(keys[i], function() {
+			for (key in events) {
+				if (!events.hasOwnProperty(key)) 
+					continue;
+				ev = (function() { return events[key]; })();
+				holder.on(key, function() {
 					state.raise(ev);
 				});
 			}
+
 		}
 	};
 

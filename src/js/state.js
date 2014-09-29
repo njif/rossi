@@ -4,7 +4,6 @@
 		this._owner = owner;
 		this._callbacks = {};
 		this._eventList = eventList;
-		//this._ownEvetList = ns.jstools.inverObject(eventList);
 	};
 
 	Mediator.prototype = {

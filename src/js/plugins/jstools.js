@@ -47,17 +47,6 @@
 
 		raiseCallbacks1Param: function (callbacks, param) {
 			_private.raiseCallbacks(callbacks, [param]);
-		},
-
-		inverObject: function (obj) {
-			var keys = Object.keys(obj),
-			count = obj.length,
-			val, i,
-			retval = {};
-
-			for (i = 0; i < count; i++)
-				retval[obj[keys[i]]] = keys[i];
-			return retval;
 		}
 	},
 
@@ -66,8 +55,7 @@
 	ns.jstools = {
 		subscribe: _private.addCallbackTo,
 		unsubscribe: _private.deleteCallbackFrom,
-		publish: _private.raiseCallbacks1Param,
-		inverObject: _private.inverObject,
+		publish: _private.raiseCallbacks1Param
 	};
 
 }(window.rossi));

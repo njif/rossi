@@ -179,6 +179,8 @@ function processJs() {
 			'src/js/eventlist.js',
 			'src/js/state.js',
 			'src/js/controls/button.js',
+			'src/js/controls/menu.js',
+			'src/js/controls/slider.js',
 			'src/js/app.js',
 			'src/js/main.js'
 		]).pipe(plumber())
